@@ -1,1 +1,18 @@
-git clone https://github.com/mupermono/QRs-mes-de-Abril
+import schedule
+import time
+
+
+def bot_task():
+
+    # Aquí va la lógica de tu bot
+
+
+
+    print("¡El bot se ha ejecutado!")
+
+# Programa la tarea para que se ejecute todos los días a una hora específica
+schedule.every().day.at("14:00").do(bot_task)
+
+while True:
+    schedule.run_pending()
+    time.sleep(1)
